@@ -8,7 +8,13 @@ Group:		Applications/Databases
 Source0:	https://mysql-master-ha.googlecode.com/files/%{name}-%{version}.tar.gz
 # Source0-md5:	8dd07fabcddcd17a2973cf4b85c61e19
 URL:		http://code.google.com/p/mysql-master-ha/
+BuildRequires:	mysql-devel
 BuildRequires:	perl(ExtUtils::MakeMaker) >= 6.30
+BuildRequires:	perl-DBI
+BuildRequires:	perl-Test-Deep
+BuildRequires:	perl-Test-NoWarnings
+BuildRequires:	perl-Test-Tester
+BuildRequires:	perl-Encode
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-DBD-mysql
 Requires:	perl-DBI
